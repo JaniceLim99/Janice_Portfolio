@@ -452,6 +452,18 @@ section {
   color: var(--color-white);
   margin-bottom: 1.5rem;
 }
+
+.portfolios .portfolio-item .hover-item h2 {
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.portfolios .portfolio-item .hover-item h4 {
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
 .portfolios .portfolio-item .hover-item .icons {
   display: flex;
   justify-content: center;
