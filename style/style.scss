@@ -638,6 +638,18 @@ section{
     .submit-btn{
       display: flex;
       justify-content: flex-start;
+      button{
+        padding: 15px;
+        background: var(--color-secondary);
+        color: #fff;
+        font-size: 18px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        width: 150px;
+        margin: 20px auto 0;
+        border-radius: 30px;
+      }
     }
   }
 }

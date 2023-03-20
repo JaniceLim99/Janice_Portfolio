@@ -475,22 +475,23 @@
             </div>
           </div>
           <div class="right-contact">
-            <form action="https://formsubmit.co/el/jiwuxi" method="POST">
+            <form action="https://formspree.io/f/mwkjnvla" method="POST">
               <div class="input-control i-c-2">
                 <input type="text" name="Name" required placeholder="YOUR NAME">
                 <input type="email" name="Email" required placeholder="YOUR EMAIL">
               </div>
               <div class="input-control">
-                <input type="text" name="Title" required placeholder="ENTER SUBJECT">
+                <input type="text" name="Subject" required placeholder="ENTER SUBJECT">
               </div>
               <div class="input-control">
-                <textarea name="Message" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                <textarea  name="Message" required cols="15" rows="8" placeholder="Message Here..."></textarea>
               </div>
               <div class="submit-btn">
-                <a href="" class="main-btn">
-                  <span class="btn-text" type="submit" >Send</span>
+                <!-- <a href="" class="main-btn">
+                  <span class="btn-text" onclick="sendEmail(); reset()">Send</span>
                   <span class="btn-icon"><i class="fa fa-paper-plane"></i></span>
-                </a>
+                </a> -->
+                <button type="submit"><i class="fa fa-paper-plane"></i>&nbsp; Send</button>
               </div>
             </form>
           </div>
@@ -522,5 +523,21 @@
   </div>
 
   <script src="app.js"></script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "limjanice0527@gmail.com",
+        Password : "password",
+        To : 'janicelim6587.jl@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Enquiry",
+        Body : "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
+  </script> -->
 </body>
 </html>
